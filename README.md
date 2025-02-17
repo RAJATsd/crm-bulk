@@ -6,6 +6,7 @@ A crm that can be scalable to handle millions of records
 
 - [Installations](#installation)
 - [Link to Loom Video](#link-to-loom-video)
+- [Link to excalidraw](#excalidraw-link)
 - [Files Included](#files-included)
 - [Structure of project](#structure-of-project)
 - [Tech Stack](#tech-stack)
@@ -22,9 +23,13 @@ In the terminal of the project run
 
 Docker will handle all the installations. The Main server will be exposed on `localhost:3000`
 
-# Link to Loom Video
+## Link to Loom Video
 
 `https://www.loom.com/share/0f4fd44c90b541e3bda875fdc0460763`
+
+## Excalidraw link
+
+`https://excalidraw.com/#json=SkUF4PFjhTdXoto43topa,N66JJLSQmVmpQ4QoS84HhA`
 
 ## Files Included
 
