@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "b631310f-54c6-4968-9cbb-1b691d83bfcd",
+		"name": "Highlevel CRM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9417653"
+	},
+	"item": [
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bulk action by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bulk-actions/67b38e2a57af50a1b6dbf597",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bulk-actions",
+						"67b38e2a57af50a1b6dbf597"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all bulk actions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bulk-actions",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bulk-actions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bulk actions by account id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/bulk-actions-by-account/:accountId",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bulk-actions-by-account",
+						":accountId"
+					],
+					"variable": [
+						{
+							"key": "accountId",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload bulk action",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/pdgt/Documents/highlevel_project/generated_contacts.csv"
+						},
+						{
+							"key": "accountId",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/bulk-actions/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"bulk-actions",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

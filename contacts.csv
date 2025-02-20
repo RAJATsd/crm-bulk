@@ -1,0 +1,4 @@
+contact,create,8878877272,name,Poonia,email,poonia@example.com,age,25
+contact,create,8878877273,name,John,email,john@example.com,age,30
+contact,update,8878877272,name,Poonia Updated,age,26,,
+contact,delete,8878877273,,,,,,

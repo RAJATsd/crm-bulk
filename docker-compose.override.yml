@@ -1,0 +1,16 @@
+services:
+  worker:
+    build: . # Uses the same Docker image as the main app
+    container_name: worker
+    command: ["node", "worker/index.js"] # Runs worker.js instead of the server
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - MONGO_URI=mongodb://admin:password@mongo:27017
+    depends_on:
+      - redis
+      - mongo
+    networks:
+      - app-network
+    volumes:
+      - /app/node_modules
